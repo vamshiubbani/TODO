@@ -1,0 +1,86 @@
+/* Ensure the entire page covers the viewport */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the form */
+.auth-form {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* max-width: 400px; */
+  width: 400px;
+}
+
+/* Form headings */
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form groups */
+.auth-form .form-group1,
+.auth-form .form-group2,
+.auth-form .form-group3,
+.auth-form .form-group4 {
+  margin-bottom: 15px;
+}
+
+/* Form labels */
+.auth-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Form inputs */
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  width: calc(100% - 20px); /* Adjusting width to account for padding */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Submit button */
+.auth-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.auth-form button:hover {
+  background-color: #45a049;
+}
+
+/* Login link */
+.auth-form p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.auth-form .switch-link {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.auth-form .switch-link:hover {
+  text-decoration: underline;
+}
